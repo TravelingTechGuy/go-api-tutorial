@@ -4,8 +4,8 @@ This is a small project, created to teack myself golang.
 
 It contains the following principles (more items will be added)
 
-1. REST API using [gin](github.com/gin-gonic/gin)
-1. Reading a `.env` file using [godotenv](github.com/joho/godotenv)
+1. REST API using [gin](https://github.com/gin-gonic/gin)
+1. Reading a `.env` file using [godotenv](https://github.com/joho/godotenv)
 1. Reading a JSON file
 1. Marshaling and unmarshaling `struct`/`json`
 1. `switch` statement
@@ -14,6 +14,6 @@ It contains the following principles (more items will be added)
 
 ## TBD
 
-1. SQLite db
+1. SQLite db using [thsi](https://gitlab.com/cznic/sqlite)
 1. Online db
 1. Calling HTTP services
