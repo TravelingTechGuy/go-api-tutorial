@@ -20,7 +20,7 @@ func loadBooksStatic() {
 
 func loadBooksJSON() {
 	//Read the file
-	content, err := os.ReadFile("./books.json")
+	content, err := os.ReadFile("./data/books.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}
