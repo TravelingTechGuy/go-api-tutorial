@@ -20,6 +20,5 @@ The project contains the following principles (more items will be added)
 
 ## To run
 1. Clone repo
-1. Install dependencies
-1. `go run .` in the project's folder
+1. `go run .` in the project's folder - this will install dependencies the first time
 1. Use `curl` or a browser. The default port is `8080`
