@@ -5,8 +5,6 @@ import (
 	"errors"
 	"log"
 	"os"
-
-	"github.com/joho/godotenv"
 )
 
 func loadBooksStatic() []book {
@@ -35,14 +33,7 @@ func loadBooksJSON() ([]book, error) {
 	return payload, nil
 }
 
-func loadBooks() ([]book, error) {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("Some error occured. Err: %s", err)
-	}
-
-	src := os.Getenv("BOOKS_SOURCE")
-	log.Printf("Books read from %s", src)
+func loadBooks(src string) ([]book, error) {
 	switch src {
 	case "static":
 		return loadBooksStatic(), nil
