@@ -37,8 +37,10 @@ func loadBooks(src string) ([]book, error) {
 	switch src {
 	case "static":
 		return loadBooksStatic(), nil
-	case "json", "db":
+	case "json":
 		return loadBooksJSON()
+	case "db":
+		return loadBooksDB()
 	default:
 		return nil, errors.New("wrong books source specified in env file")
 	}

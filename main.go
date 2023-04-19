@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	db()
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalf("Error reading env file: %s", err)
