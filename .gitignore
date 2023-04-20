@@ -16,3 +16,6 @@
 
 #SQLite database
 data/*.db
+
+#VSCode
+.vscode
